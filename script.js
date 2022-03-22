@@ -10,6 +10,9 @@ function setBoardSize(size){
     for (let i = 0; i < boardArea; i++) {
         let cell = document.createElement('div');
         cell.style.border = ".5px solid blue";
+        cell.addEventListener("mouseover", function(){
+                cell.style.backgroundColor = "red";
+        })
         gridBoard.insertAdjacentElement('beforeend', cell);
     }
 }
@@ -26,6 +29,8 @@ function changeSize(input){
         setBoardSize(input);
     }
 }
+
+
 
 
 
