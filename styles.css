@@ -1,0 +1,9 @@
+.grid-box {
+  width: 500px;
+  height: 500px;
+  display: grid;
+}
+
+.red {
+  background-color: red;
+}
