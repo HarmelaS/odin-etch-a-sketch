@@ -1,0 +1,169 @@
+html {
+    display: flex;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 3.5em;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: "Shrikhand", sans-serif;
+    margin-bottom: 0px;
+    color: red;
+  }
+  
+  .colors-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+  }
+  
+  .top-color-section,
+  .bottom-color-section {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .color-button {
+    margin-bottom: 20px;
+    gap: 0px;
+  }
+  
+  #blackColor,
+  #redColor,
+  #yellowColor,
+  #blueColor {
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+  }
+  
+  #blackColor:hover,
+  #redColor:hover,
+  #yellowColor:hover,
+  #blueColor:hover {
+    transform: scale(1.2);
+  }
+  
+  #blackColor {
+    color: white;
+    background-color: black;
+  }
+  
+  #blueColor {
+    color: white;
+    background-color: blue;
+  }
+  
+  #redColor {
+    color: white;
+    background-color: red;
+  }
+  
+  #yellowColor {
+    color: white;
+    background-color: gold;
+  }
+  
+  #grid-size-button {
+    font-family: "Poppins", sans-serif;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .clear-grid-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid-size-button {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  #clearGrid:hover {
+    background-color: #ff4124;
+    transform: scale(1.1);
+  }
+  
+  .grid-outer-box {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    max-width: 600px;
+  }
+  
+  .grid-box {
+    border: 2px solid black;
+    width: 600px;
+    height: 600px;
+    display: grid;
+  }
+  
+  #clearGrid {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    margin: 30px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  @media screen and (max-width: 768px) {
+    main {
+      margin-top: 20px;
+    }
+  
+    h1 {
+      font-size: 2.5em;
+    }
+  
+    .grid-outer-box {
+      padding: 20px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .grid-box {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .colors-box {
+      gap: 20px;
+    }
+  
+    .top-color-section,
+    .bottom-color-section {
+      display: inline-block;
+      gap: 20px;
+    }
+  
+    div.colorButton {
+      margin-bottom: 10px;
+    }
+  }
+  
+  
